@@ -11,6 +11,7 @@ exports.getUsers = async (req, res) => {
 // @access  Public
 exports.createUser = async (req, res) => {
   console.log(req.body);
+  console.log(req.data);
   const {name} = await Users.create(req.body);  
   const id = req.body.id;
 //  users.push({ id, name });
